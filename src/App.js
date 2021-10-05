@@ -71,7 +71,8 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+		<div className="p-4 bg-gray-900 min-h-screen">
+			<h2 className="pb-4 text-5xl flex-1 text-white text-center">Todo App</h2>
 			{isEditing ? (
 				<EditTodoForm
 					currentTodo={currentTodo}
@@ -87,7 +88,7 @@ function App() {
 				/>
 			)}
 
-			<ul>
+			<ul className="m-auto">
 				{todos.map((todo) => (
 					<TodoItem
 						key={todo.id}

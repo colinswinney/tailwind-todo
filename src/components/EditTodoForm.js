@@ -1,19 +1,32 @@
 function EditTodoForm({ currentTodo, setIsEditing, onEditInputChange, onEditFormSubmit}) {
     return (
-        <form onSubmit={onEditFormSubmit}>
-            <h2>Edit Todo</h2>
-            <label htmlFor="editTodo">Edit todo:</label>
-            <input
-                name="editTodo"
-                type="text"
-                placeholder="Edit todo"
-                value={currentTodo.text}
-                onChange={onEditInputChange}
-            />
-            <button type="submit">Update</button>
-            <button onClick={() => setIsEditing(false)}>Cancel</button>
-        </form>
-    );
+			<form onSubmit={onEditFormSubmit} className="form">
+				<label htmlFor="editTodo" className="text-white">
+					Edit
+				</label>
+				<div className="flex">
+					<input
+						name="editTodo"
+						type="text"
+						placeholder="Edit todo"
+						value={currentTodo.text}
+						onChange={onEditInputChange}
+						className="input"
+					/>
+                    
+					<button
+						className="btn btn-danger"
+						onClick={() => setIsEditing(false)}
+					>
+						<i class="fas fa-times"></i>
+					</button>
+
+					<button type="submit" className="btn btn-submit">
+						<i class="fas fa-plus"></i>
+					</button>
+				</div>
+			</form>
+		);
 }
 
 export default EditTodoForm
