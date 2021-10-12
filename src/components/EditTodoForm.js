@@ -1,7 +1,7 @@
 function EditTodoForm({ currentTodo, setIsEditing, onEditInputChange, onEditFormSubmit}) {
     return (
 			<form onSubmit={onEditFormSubmit} className="form">
-				<label htmlFor="editTodo" className="text-white">
+				<label htmlFor="editTodo" className="text-white font-bold">
 					Edit
 				</label>
 				<div className="flex">

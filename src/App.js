@@ -71,8 +71,10 @@ function App() {
 	}
 
 	return (
-		<div className="p-4 bg-gray-900 min-h-screen">
-			<h2 className="pb-4 text-5xl flex-1 text-white text-center">Todo App</h2>
+		<div className="p-4 pt-12 min-h-screen bg-gradient-to-br from-indigo-900 to-indigo-700">
+			<h2 className="pb-4 flex-1 text-5xl text-white text-center font-black">
+				Todo App
+			</h2>
 			{isEditing ? (
 				<EditTodoForm
 					currentTodo={currentTodo}

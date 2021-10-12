@@ -1,7 +1,7 @@
 function AddTodoForm({ todo, onAddFormSubmit, onAddInputChange }) {
 	return (
 		<form onSubmit={onAddFormSubmit} className="form">
-			<label htmlFor="todo" className="text-white">Add</label>
+			<label htmlFor="todo" className="text-white font-bold">Add</label>
 			<div className="flex">
 				<input
 					name="todo"
